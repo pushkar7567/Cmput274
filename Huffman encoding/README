@@ -19,3 +19,4 @@ To compress a file, while in directory of the file in terminal, type python3 ../
 
 Notes and assumptions:
 It is assumed that the modules bitio.py and huffman.py are in the same directory as in util.py.
+Not all files are created by me!!
