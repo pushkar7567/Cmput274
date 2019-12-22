@@ -1,0 +1,21 @@
+Name: Pushkar Sabharwal
+ID: 1588927
+CMPUT 274 Fa19
+
+HUFFMAN ASSIGNMENT
+
+
+Included Files:
+- util.py: Contains the five functions read_tree(), decode_byte(), write_tree(), compress(), and decompress() which compress or decompress files. 
+- README
+
+
+Running the code:
+the file util.py has been modified to compress or decompress any file. Can be used to compress any file to .huf and decomress any file of .huf format. 
+
+To decompress a file, while in the directory of file in terminal, type python3 ../webserver.py. Now, open a web browser and type http://locahost:8000/[name of file]. This will either display the decompressed file or prompt you to download it.
+
+To compress a file, while in directory of the file in terminal, type python3 ../compress.py [name of the file]. This will create a new file with same name but compressed and with format .huf in the same directory.
+
+Notes and assumptions:
+It is assumed that the modules bitio.py and huffman.py are in the same directory as in util.py.
