@@ -1,0 +1,32 @@
+Name: Pushkar Sabharwal
+ID: 1588927
+CMPUT 274 Fa19
+
+Weekly Exercise #6: Serial counter
+
+Included Files: 
+	*README
+	*serial_counter.cpp
+
+Notes and assumptions:
+	It is assumed that makefile exists in the folder the program is run. It has been included in the zipped file.
+
+Required components
+	* 5 LEDs
+	* 7 Jumper wires
+	* Arduino atmega 2560
+	* 5 resistors above 220 ohm reistance
+
+Wiring instructions	
+	Arduino Pin 9 <--> LED1 <--> Resistor <--> GND
+	Arduino Pin 10 <--> LED2 <--> Resistor <--> GND
+	Arduino Pin 11 <--> LED3 <--> Resistor <--> GND
+	Arduino Pin 12 <--> LED4 <--> Resistor <--> GND
+	Arduino Pin 13 <--> LED5 <--> Resistor <--> GND
+
+
+
+Running instructions:
+	While inside the folder of the program, in the terminal, type 'makefile upload && serial-mon'. This will compile the program, upload it, and open up serial moniter. Then you can enter ant value you the incrementation by.
+Notes:
+	The program serial_counter.cpp contains 4 function each with a different purpose. The first function that is void setup() defines the pinmodes of all the leds. The getHexValue() finds the amount by which the total has to be incremented with the press of the key using ascii values. The updateLEDs() function uses the values obtained from the getHesValue() function, finds the binary equivalent of it, and updates the LEDs accordingly. Lastly, the main() function is the first function to be executed when the program is run. It fetched the value of the getHexValue() function and adds it to the previous total, gives the new total to the updateLEDs() function which updates the Led accordingly.
